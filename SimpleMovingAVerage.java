@@ -15,7 +15,7 @@ public class SimpleMovingAVerage {
             Sheet sheet = workbook.getSheetAt(0);
             int lastRow = sheet.getLastRowNum();
             
-            int[] indices = {1, 2, 3, 4, 5, 6}; // Column indices for Open, High, Low, Close, Adj Close, Volume
+            int[] indices = {1, 2, 3, 4, 5, 6}; 
             
             for (int index : indices) {
                 calculateSMA(sheet, index, 10);
